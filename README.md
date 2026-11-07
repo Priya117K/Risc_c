@@ -113,6 +113,14 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 <img width="1261" height="466" alt="image" src="https://github.com/user-attachments/assets/aeaaf8ac-f597-4b44-8924-80714f7aa07e" />
 <img width="849" height="335" alt="image" src="https://github.com/user-attachments/assets/7046fe78-0c04-44b9-8119-b0e693c116df" />
 <img width="669" height="282" alt="image" src="https://github.com/user-attachments/assets/e8837568-cc6f-4b04-8f90-99acf70f01db" />
+<img width="945" height="221" alt="image" src="https://github.com/user-attachments/assets/f8e372aa-2c4c-4adf-a270-2292934d7a4b" />
+## Unit Tests and fuzzer
+<img width="733" height="311" alt="image" src="https://github.com/user-attachments/assets/e8d4c406-b346-4049-a5af-1411292368ed" />
+## : Same tests under AddressSanitizer and UBSan
+<img width="540" height="317" alt="image" src="https://github.com/user-attachments/assets/3786260f-cac1-43a8-9175-0527e96cdd98" />
+
+
+
 
 
 
