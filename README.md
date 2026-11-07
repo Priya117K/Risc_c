@@ -131,13 +131,6 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 ## Project size and layout
 <img width="471" height="405" alt="image" src="https://github.com/user-attachments/assets/fd7d49f8-b931-49ae-8992-d6dbb9a349f4" />
 
-
-
-
-
-
-
-
 Exit status: the guest's exit code; `134` on a trap; `124` if `-n` limit hit; `1` on usage/load error.
 
 ### Debugger
@@ -178,7 +171,7 @@ Repeat until the program is done.
 
 The project recreates each part of that loop in C code. It has the 32 notepads (registers), a block of pretend memory, and the logic that carries out each instruction.
 
-Why it’s safe
+## Why it’s safe
 
 Real chips can crash if a program does something silly, like reading memory that doesn’t exist. This simulator checks every memory access first. If a program tries something illegal, it stops and says exactly what went wrong and where, like a teacher saying “you broke the rule on line 4”. It doesn’t just crash.
 
