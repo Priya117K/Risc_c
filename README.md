@@ -112,6 +112,8 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 ```
 <img width="1261" height="466" alt="image" src="https://github.com/user-attachments/assets/aeaaf8ac-f597-4b44-8924-80714f7aa07e" />
 <img width="849" height="335" alt="image" src="https://github.com/user-attachments/assets/7046fe78-0c04-44b9-8119-b0e693c116df" />
+<img width="669" height="282" alt="image" src="https://github.com/user-attachments/assets/e8837568-cc6f-4b04-8f90-99acf70f01db" />
+
 
 
 Exit status: the guest's exit code; `134` on a trap; `124` if `-n` limit hit; `1` on usage/load error.
