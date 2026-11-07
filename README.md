@@ -110,6 +110,9 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
     -Ttext=0x80000000 -o prog.elf prog.S
 ./build/riskv prog.elf
 ```
+<img width="1261" height="466" alt="image" src="https://github.com/user-attachments/assets/aeaaf8ac-f597-4b44-8924-80714f7aa07e" />
+<img width="849" height="335" alt="image" src="https://github.com/user-attachments/assets/7046fe78-0c04-44b9-8119-b0e693c116df" />
+
 
 Exit status: the guest's exit code; `134` on a trap; `124` if `-n` limit hit; `1` on usage/load error.
 
