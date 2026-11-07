@@ -1,0 +1,9 @@
+# sum.hex - sums 1..10 and exits with the result (55)
+00000293   # li   t0, 0
+00a00313   # li   t1, 10
+006282b3   # loop: add t0, t0, t1
+fff30313   # addi t1, t1, -1
+fe031ce3   # bne  t1, zero, loop
+00028513   # mv   a0, t0
+05d00893   # li   a7, 93
+00000073   # ecall            ; exit(55)

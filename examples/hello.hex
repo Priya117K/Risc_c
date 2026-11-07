@@ -1,0 +1,14 @@
+# hello.hex - prints a greeting via the write syscall
+00000597   # auipc a1, 0        ; a1 = address of this instruction
+02458593   # addi  a1, a1, 36   ; a1 -> message (9 words ahead)
+00100513   # li    a0, 1        ; fd = stdout
+00f00613   # li    a2, 15       ; length
+04000893   # li    a7, 64       ; SYS_write
+00000073   # ecall
+00000513   # li    a0, 0        ; exit code
+05d00893   # li    a7, 93       ; SYS_exit
+00000073   # ecall
+6c6c6548   # "Hell"
+52202c6f   # "o, R"
+2d435349   # "ISC-"
+000a2156   # "V!\n"
