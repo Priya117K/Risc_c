@@ -130,3 +130,45 @@ Exit status: the guest's exit code; `134` on a trap; `124` if `-n` limit hit; `1
 * Memory-mapped UART and timer; GDB remote serial protocol stub
 * Pipeline model (5-stage, hazards, branch predictor) for cycle-accurate statistics
 * Run the official `riscv-tests` rv32ui suite
+
+## To explain in simpler terms(If i were to explain to a naiver-person):
+Think of a video game console emulator, the kind that lets you play old Nintendo games on your laptop. This project does the same thing, but for a processor chip instead of a console.
+
+The problem
+
+Every computer chip understands its own language. Your laptop’s chip speaks one language, and a chip called RISC-V speaks a different one. A program written for RISC-V can’t run on your laptop, just as a French book is no use to someone who only reads English.
+
+What this project does
+
+RISK-V is a translator that pretends to be a RISC-V chip. You give it a RISC-V program, and it acts out what the real chip would do, step by step, on your normal laptop.
+
+A processor’s job is a simple loop:
+
+Fetch: read the next instruction from memory, like reading the next line of a recipe.
+Decode: work out what it means, for example “add these two numbers”.
+Execute: do it, and write the result into one of the chip’s tiny notepads called registers.
+Repeat until the program is done.
+
+The project recreates each part of that loop in C code. It has the 32 notepads (registers), a block of pretend memory, and the logic that carries out each instruction.
+
+Why it’s safe
+
+Real chips can crash if a program does something silly, like reading memory that doesn’t exist. This simulator checks every memory access first. If a program tries something illegal, it stops and says exactly what went wrong and where, like a teacher saying “you broke the rule on line 4”. It doesn’t just crash.
+
+A real example
+
+You run the included demo program and it prints Hello, RISC-V!. That message wasn’t produced by a RISC-V chip. Your laptop produced it by pretending to be one, following the program’s instructions one at a time.
+
+## Why I built this
+
+I didn't want to build another web app. Don't get me wrong, I like them, but everyone's portfolio has the same HTML/CSS/JS project, and I wanted something that made me work for it.
+
+So I went the other way and asked what a computer actually does when it runs a program. RISK-V is my answer: a small simulator of a RISC-V processor, written in plain C. It reads instructions one at a time, works out what each one means, and carries it out, the way a real chip would.
+
+It was harder than I expected. I had to learn how instructions are packed into 32 bits, why one wrong bounds check can break everything, and how to test code that has no screen or buttons. Getting "Hello, RISC-V!" to print for the first time was one of the best moments I've had while coding.
+
+Also, I built this to 
+
+To test software before the real chip exists.
+To learn how processors work inside.
+To debug low-level programs, because you can pause, step through, and inspect everything.
