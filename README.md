@@ -124,8 +124,12 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 <img width="526" height="256" alt="image" src="https://github.com/user-attachments/assets/b1074ec2-598b-4ffb-9e69-3164b5536f2f" />
 ## A precise trap (memory safety in action)
 <img width="481" height="254" alt="image" src="https://github.com/user-attachments/assets/876e1fc4-5073-4af9-9a45-6d19a530d849" />
-## interactive debugger session
+## Interactive debugger session
 <img width="734" height="465" alt="image" src="https://github.com/user-attachments/assets/62ffd694-c2fc-4411-9cb8-723574314fbb" />
+## Infinite-loop guard
+<img width="575" height="287" alt="image" src="https://github.com/user-attachments/assets/ca443502-2299-4463-abe0-2dd48574011a" />
+## Project size and layout
+<img width="471" height="405" alt="image" src="https://github.com/user-attachments/assets/fd7d49f8-b931-49ae-8992-d6dbb9a349f4" />
 
 
 
