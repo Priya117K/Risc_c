@@ -118,6 +118,13 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 <img width="733" height="311" alt="image" src="https://github.com/user-attachments/assets/e8d4c406-b346-4049-a5af-1411292368ed" />
 ## : Same tests under AddressSanitizer and UBSan
 <img width="540" height="317" alt="image" src="https://github.com/user-attachments/assets/3786260f-cac1-43a8-9175-0527e96cdd98" />
+## Running programs, with execution statistics
+<img width="450" height="337" alt="image" src="https://github.com/user-attachments/assets/a6d0a382-2e9a-4f8f-adc5-b3a411f90656" />
+## Instruction trace with disassembly
+<img width="526" height="256" alt="image" src="https://github.com/user-attachments/assets/b1074ec2-598b-4ffb-9e69-3164b5536f2f" />
+## A precise trap (memory safety in action)
+<img width="481" height="254" alt="image" src="https://github.com/user-attachments/assets/876e1fc4-5073-4af9-9a45-6d19a530d849" />
+
 
 
 
