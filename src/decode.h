@@ -48,6 +48,14 @@ typedef enum {
     X(XORI,   "xori",   FMT_I,     CLS_ALU)    \
     X(ORI,    "ori",    FMT_I,     CLS_ALU)    \
     X(ANDI,   "andi",   FMT_I,     CLS_ALU)    \
+    X(MUL,    "mul",    FMT_R,     CLS_ALU)    \
+    X(MULH,   "mulh",   FMT_R,     CLS_ALU)    \
+    X(MULHSU, "mulhsu", FMT_R,     CLS_ALU)    \
+    X(MULHU,  "mulhu",  FMT_R,     CLS_ALU)    \
+    X(DIV,    "div",    FMT_R,     CLS_ALU)    \
+    X(DIVU,   "divu",   FMT_R,     CLS_ALU)    \
+    X(REM,    "rem",    FMT_R,     CLS_ALU)    \
+    X(REMU,   "remu",   FMT_R,     CLS_ALU)    \
     X(SLLI,   "slli",   FMT_SHIFT, CLS_ALU)    \
     X(SRLI,   "srli",   FMT_SHIFT, CLS_ALU)    \
     X(SRAI,   "srai",   FMT_SHIFT, CLS_ALU)    \
