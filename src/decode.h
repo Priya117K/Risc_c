@@ -109,5 +109,5 @@ static inline int32_t s32(uint32_t v)
 
 /* ABI register name ("zero", "ra", "sp", "a0", ...). r is masked to 0..31. */
 const char *reg_name(unsigned r);
-
+#endif
 
