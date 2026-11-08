@@ -1,16 +1,4 @@
-/*
- * decode.h - RV32I instruction decoder.
- *
- * decode() is a pure function: 32-bit word in, fully-decoded instr_t out.
- * It never fails; unrecognised encodings decode to OP_ILLEGAL so the execute
- * stage can raise a precise illegal-instruction trap.
- *
- * The opcode table below is an X-macro: one line per instruction drives the
- * enum, the mnemonic, the assembly format (for the disassembler) and the
- * instruction class (for statistics), so they can never drift out of sync.
- */
-#ifndef RISKV_DECODE_H
-#define RISKV_DECODE_H
+
 
 #include <stdint.h>
 
