@@ -353,4 +353,3 @@ void cpu_print_stats(FILE *f, const cpu_t *c)
     fprintf(f, "bytes loaded/stored  : %llu / %llu\n",
             (unsigned long long)c->loads_bytes, (unsigned long long)c->stores_bytes);
 }
-
