@@ -16,7 +16,7 @@
 #include <stdio.h>
 #include "decode.h"
 #include "memory.h"
-
+    
 typedef enum {
     TRAP_NONE = 0,
     TRAP_FETCH_MISALIGNED,
