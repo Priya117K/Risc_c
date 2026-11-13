@@ -69,13 +69,13 @@ And it's **safe**: every memory access is checked first. If a program does somet
 
 | | Feature | Details |
 |---|---|---|
-| 🧩 | **Complete RV32I** | `LUI`/`AUIPC`, `JAL`/`JALR`, all six branches, `LB`/`LH`/`LW`/`LBU`/`LHU`, `SB`/`SH`/`SW`, all register and immediate ALU ops, `FENCE`, `ECALL`, `EBREAK` (**40 instructions**) |
-| 🛡️ | **Memory safety by construction** | A single bounds-checked access layer with overflow-safe range checks, strict alignment, and guest-pointer validation inside syscalls |
-| 🎯 | **Precise traps** | The faulting instruction commits nothing; `pc` and `trap_value` identify it exactly |
-| 📦 | **Loaders** | ELF32/RISC-V (`PT_LOAD`, entry point), flat binary, commented hex. Segments outside RAM are rejected |
-| 🐧 | **Linux-style syscalls** | `exit` (93), `write` (64) via `ecall` |
-| 🔧 | **Tooling** | Tracer, disassembler with pseudo-instructions, statistics, register dump, instruction limit, gdb-style debugger |
-| ✅ | **Verification** | Unit tests on an in-C mini assembler, a 300,000-iteration fuzzer, and ASan + UBSan builds |
+|  | **Complete RV32I** | `LUI`/`AUIPC`, `JAL`/`JALR`, all six branches, `LB`/`LH`/`LW`/`LBU`/`LHU`, `SB`/`SH`/`SW`, all register and immediate ALU ops, `FENCE`, `ECALL`, `EBREAK` (**40 instructions**) |
+|  | **Memory safety by construction** | A single bounds-checked access layer with overflow-safe range checks, strict alignment, and guest-pointer validation inside syscalls |
+|  | **Precise traps** | The faulting instruction commits nothing; `pc` and `trap_value` identify it exactly |
+| | **Loaders** | ELF32/RISC-V (`PT_LOAD`, entry point), flat binary, commented hex. Segments outside RAM are rejected |
+| | **Linux-style syscalls** | `exit` (93), `write` (64) via `ecall` |
+|  | **Tooling** | Tracer, disassembler with pseudo-instructions, statistics, register dump, instruction limit, gdb-style debugger |
+|  | **Verification** | Unit tests on an in-C mini assembler, a 300,000-iteration fuzzer, and ASan + UBSan builds |
 
 ---
 
