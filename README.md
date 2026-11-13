@@ -301,7 +301,7 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 
 <table>
   <tr>
-    <td align="center" width="50%"><img src="docs/images/unit-tests.png" alt="Unit tests and fuzzer"><br><sub><b>Unit tests & fuzzer</b></sub></td>
+    <td align="center" width="50%"><img src="[docs/images/unit-tests.png](https://github.com/user-attachments/assets/aeaaf8ac-f597-4b44-8924-80714f7aa07e)" alt="Unit tests and fuzzer"><br><sub><b>Unit tests & fuzzer</b></sub></td>
     <td align="center" width="50%"><img src="docs/images/asan-ubsan.png" alt="ASan and UBSan"><br><sub><b>Same tests under ASan + UBSan</b></sub></td>
   </tr>
   <tr>
