@@ -1,3 +1,13 @@
+
+ ____  ___ ____  _  __     __     __
+|  _ \|_ _/ ___|| |/ /     \ \   / /
+| |_) || | \___ \| ' /_____ \ \ / /
+|  _ < | |  ___) | . \_____| \ V /
+|_| \_\___||____/|_|\_\      \_/
+
+
+
+
 # RISK-V — an RV32I Instruction Set Simulator
 
 A modular, bounds-checked simulator for the RISC-V **RV32I** base integer ISA,
