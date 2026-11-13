@@ -27,7 +27,7 @@
 
 ---
 
-## 🎬 Demo
+##  Demo
 
 ```console
 $ make && ./build/riskv examples/hello.hex
@@ -48,7 +48,7 @@ RISK-V emulates the CPU core, the 32-entry register file, and byte-addressable l
 
 ---
 
-## 🧒 Explain it simply
+##  Explain it simply
 
 Think of a **video game console emulator**, the kind that lets you play old Nintendo games on your laptop. This project does the same thing, but for a **processor chip**.
 
@@ -65,7 +65,7 @@ And it's **safe**: every memory access is checked first. If a program does somet
 
 ---
 
-## 🚀 Features
+##  Features
 
 | | Feature | Details |
 |---|---|---|
@@ -79,7 +79,7 @@ And it's **safe**: every memory access is checked first. If a program does somet
 
 ---
 
-## ⚙️ How it works
+##  How it works
 
 ### The execution loop
 
@@ -166,7 +166,7 @@ flowchart LR
 
 ---
 
-## 🛡️ Memory safety
+##  Memory safety
 
 Every guest memory access goes through one layer. The classic bug is checking `addr + len <= size`, which **overflows** for large `addr`. RISK-V subtracts instead:
 
@@ -213,7 +213,7 @@ Change with `-b ADDR` and `-m MiB`.
 
 ---
 
-## ✅ Verification
+##  Verification
 
 - **Unit tests** built on an in-C mini assembler, so tests read like assembly rather than magic hex.
 - **Fuzzer:** 300,000 iterations of random programs, checking these invariants after every step:
@@ -229,7 +229,7 @@ Change with `-b ADDR` and `-m MiB`.
 
 ---
 
-## 🐞 Interactive debugger
+##  Interactive debugger
 
 Launch with `-i`:
 
@@ -245,7 +245,7 @@ Launch with `-i`:
 
 ---
 
-## ⚡ Quick start
+##  Quick start
 
 ```bash
 git clone https://github.com/<your-username>/<repo-name>.git
@@ -294,7 +294,7 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 ```
 
 ---
-## 📸 Screenshots
+##  Screenshots
 
 ### Overview
 
@@ -356,7 +356,7 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
   </tr>
 </table>
 
-## 💡 Why I built this
+##  Why I built this
 
 I didn't want to build another web app. Don't get me wrong, I like them, but everyone's portfolio has the same HTML/CSS/JS project, and I wanted something that made me work for it.
 
@@ -366,7 +366,7 @@ So I asked: *what does a computer actually do when it runs a program?* RISK-V is
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] **M extension** (`mul`/`div`)
 - [ ] **Zicsr** + machine-mode traps (`mtvec`, `mepc`, `mcause`)
