@@ -347,9 +347,5 @@ void cpu_print_stats(FILE *f, const cpu_t *c)
         fprintf(f, "  %-8s %12llu  (%5.1f%%)\n", names[i], n,
                 total ? 100.0 * (double)n / (double)total : 0.0);
     }
-    unsigned long long br = (unsigned long long)c->class_count[CLS_BRANCH];
-    fprintf(f, "branches taken       : %llu / %llu\n",
-            (unsigned long long)c->branches_taken, br);
-    fprintf(f, "bytes loaded/stored  : %llu / %llu\n",
-            (unsigned long long)c->loads_bytes, (unsigned long long)c->stores_bytes);
+   
 }
