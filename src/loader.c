@@ -176,12 +176,5 @@ int load_program(cpu_t *c, const char *path, load_format_t fmt, char *err, size_
             fmt = LOAD_BIN;
     }
 
-    int rc;
-    switch (fmt) {
-    case LOAD_ELF: rc = load_elf(c, buf, len, err, err_len); break;
-    case LOAD_HEX: rc = load_hex(c, (const char *)buf, err, err_len); break;
-    default:       rc = load_bin(c, buf, len, err, err_len); break;
-    }
-    free(buf);
-    return rc;
+   
 }
