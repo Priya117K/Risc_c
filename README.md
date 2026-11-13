@@ -294,31 +294,67 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostdlib -static \
 ```
 
 ---
-
 ## 📸 Screenshots
 
-> Save images in `docs/images/` with these names.
+### Overview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aeaaf8ac-f597-4b44-8924-80714f7aa07e" alt="RISK-V overview 1" width="85%">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7046fe78-0c04-44b9-8119-b0e693c116df" alt="RISK-V overview 2" width="70%">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e8837568-cc6f-4b04-8f90-99acf70f01db" alt="RISK-V overview 3" width="60%">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f8e372aa-2c4c-4adf-a270-2292934d7a4b" alt="RISK-V overview 4" width="80%">
+</p>
+
+### In action
 
 <table>
   <tr>
-    <td align="center" width="50%"><img src="[docs/images/unit-tests.png](https://github.com/user-attachments/assets/aeaaf8ac-f597-4b44-8924-80714f7aa07e)" alt="Unit tests and fuzzer"><br><sub><b>Unit tests & fuzzer</b></sub></td>
-    <td align="center" width="50%"><img src="docs/images/asan-ubsan.png" alt="ASan and UBSan"><br><sub><b>Same tests under ASan + UBSan</b></sub></td>
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/e8d4c406-b346-4049-a5af-1411292368ed" alt="Unit tests and fuzzer" width="100%"><br>
+      <sub><b>Unit tests & fuzzer</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github.com/user-attachments/assets/3786260f-cac1-43a8-9175-0527e96cdd98" alt="Same tests under AddressSanitizer and UBSan" width="100%"><br>
+      <sub><b>Same tests under AddressSanitizer & UBSan</b></sub>
+    </td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/images/statistics.png" alt="Execution statistics"><br><sub><b>Execution statistics</b></sub></td>
-    <td align="center"><img src="docs/images/trace.png" alt="Instruction trace"><br><sub><b>Instruction trace with disassembly</b></sub></td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a6d0a382-2e9a-4f8f-adc5-b3a411f90656" alt="Running programs with execution statistics" width="100%"><br>
+      <sub><b>Running programs, with execution statistics</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b1074ec2-598b-4ffb-9e69-3164b5536f2f" alt="Instruction trace with disassembly" width="100%"><br>
+      <sub><b>Instruction trace with disassembly</b></sub>
+    </td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/images/trap.png" alt="Precise trap"><br><sub><b>A precise trap</b></sub></td>
-    <td align="center"><img src="docs/images/debugger.png" alt="Debugger"><br><sub><b>Interactive debugger</b></sub></td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/876e1fc4-5073-4af9-9a45-6d19a530d849" alt="A precise trap" width="100%"><br>
+      <sub><b>A precise trap (memory safety in action)</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/62ffd694-c2fc-4411-9cb8-723574314fbb" alt="Interactive debugger session" width="100%"><br>
+      <sub><b>Interactive debugger session</b></sub>
+    </td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/images/loop-guard.png" alt="Infinite-loop guard"><br><sub><b>Infinite-loop guard (<code>-n</code>)</b></sub></td>
-    <td align="center"><img src="docs/images/project-size.png" alt="Project size"><br><sub><b>Project size & layout</b></sub></td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ca443502-2299-4463-abe0-2dd48574011a" alt="Infinite-loop guard" width="100%"><br>
+      <sub><b>Infinite-loop guard</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/fd7d49f8-b931-49ae-8992-d6dbb9a349f4" alt="Project size and layout" width="100%"><br>
+      <sub><b>Project size & layout</b></sub>
+    </td>
   </tr>
 </table>
-
----
 
 ## 💡 Why I built this
 
