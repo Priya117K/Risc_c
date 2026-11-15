@@ -1,6 +1,5 @@
-
-<div align="center">
-
+<div align="center"
+ 
 ```text
  ____   ___  ____   _  __        __     __
 |  _ \ |_ _|/ ___| | |/ /        \ \   / /
